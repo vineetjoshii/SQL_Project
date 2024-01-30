@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SF Salaries | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Explore San Francisco city employee salary data" />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="keywords" content="business,jobs and career,income" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ps-RBC-yle9aKS7wd-bzK5mRvQ1InDkwSN6B_jJ49BpJ0fE4KChdklq2JUNnARfSKyaOy-4JWNxXBORK5OGYy9jzMeNh3eDmxqw76Xni51o" nonce="819446464c5e86ba68dd7137fa86faad" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly93d3cua2FnZ2xlLmNvbS9kYXRhc2V0cy9rYWdnbGUvc2Ytc2FsYXJpZXM_cnZpPTE"/><script nonce="5801J03cuZwWcC0KFopEgg==" type="text/javascript">
+    window["pageRequestStartTime"] = 1706590805156;
+    window["pageRequestEndTime"] = 1706590805245;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons&display=block"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="5801J03cuZwWcC0KFopEgg==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/kaggle/sf-salaries" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=66bd3412594800e8bfeb" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=954c18ff97d138e98fa8" />
+  
+    
+ 
+      <script nonce="5801J03cuZwWcC0KFopEgg==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="5801J03cuZwWcC0KFopEgg==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="5801J03cuZwWcC0KFopEgg==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/kaggle/sf-salaries" />
+    <meta property="og:title" content="SF Salaries" />
+    <meta property="og:description" content="Explore San Francisco city employee salary data" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/14/14/81e8c82388b48385d96cd13f645a7f2b/dataset-card.jpeg" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+        <meta name="twitter:creator" content="@kaggle" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+            <script nonce="5801J03cuZwWcC0KFopEgg==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"SF Salaries","description":"One way to understand how a city government works is by looking at who it employs and how its employees are compensated. This data contains the names, job title, and compensation for San Francisco city employees on an annual basis from 2011 to 2014.\n\n[![salary distribution](https://www.kaggle.io/svf/157898/60445b7da739a3ae25f3f8b26328036d/salaryDistribution.png)](https://www.kaggle.com/benhamner/d/kaggle/sf-salaries/exploring-the-sf-city-salary-data)\n\n## Exploration Ideas\n\nTo help get you started, here are some data exploration ideas:\n\n - How have salaries changed over time between different groups of people?\n - How are base pay, overtime pay, and benefits allocated between different groups?\n - Is there any evidence of pay discrimination based on gender in this dataset?\n - How is budget allocated based on different groups and responsibilities?\n\nHave other ideas you're curious for someone else to explore? Post them in [this forum thread](https://www.kaggle.com/forums/f/977/sf-salaries/t/18264/sf-salaries-dataset).\n\n## Data Description\n\nsf-salaries-release-*.zip (downloadable via the \"Download Data\" link in the header above) contains a CSV table and a SQLite database (with the same data as the CSV file). Here's the [code that creates this data release](https://github.com/benhamner/sf-salaries).\n\nThe original source for this data is [here](http://transparentcalifornia.com/salaries/san-francisco/). We've taken the raw files here and combined/normalized them into a single CSV file as well as a SQLite database with an equivalently-defined table.","url":"https://www.kaggle.com/kaggle/sf-salaries","version":5,"keywords":["subject, people and society, business","subject, people and society, jobs and career","subject, people and society, jobs and career, income"],"license":{"@type":"CreativeWork","name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"identifier":["14"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Organization","name":"Kaggle","url":"https://www.kaggle.com/organizations/kaggle","image":"https://storage.googleapis.com/kaggle-organizations/4/thumbnail.png"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/kaggle/sf-salaries/download?datasetVersionNumber=5","contentSize":"12036742 bytes"}],"commentCount":9,"dateModified":"2019-12-05T23:30:07.663Z","discussionUrl":"https://www.kaggle.com/kaggle/sf-salaries/discussion","alternateName":"Explore San Francisco city employee salary data","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/14/14/81e8c82388b48385d96cd13f645a7f2b/dataset-card.jpeg","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":9},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":75824},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":467467},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":831}]}</script>
+        
+
+  
+    
+
+  
+    
+
+
+    <script nonce="5801J03cuZwWcC0KFopEgg==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="5801J03cuZwWcC0KFopEgg==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="5801J03cuZwWcC0KFopEgg==" src="/static/assets/runtime.js?v=296f5ee92e2deffcb02a" data-turbolinks-track="reload"></script>
+  <script nonce="5801J03cuZwWcC0KFopEgg==" src="/static/assets/vendor.js?v=5e7b28c2262ffc4a89fa" data-turbolinks-track="reload"></script>
+  <script nonce="5801J03cuZwWcC0KFopEgg==" src="/static/assets/app.js?v=25bef34096b686ac5ac5" data-turbolinks-track="reload"></script>
+    <script nonce="5801J03cuZwWcC0KFopEgg==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '18576184'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+<div id="site-container"></div>
+
+<div id="site-body" class="hide">
+    
+
+
+<script nonce="5801J03cuZwWcC0KFopEgg==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="5801J03cuZwWcC0KFopEgg==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const useProdHosts = ["www.kaggle.com", "admin.kaggle.com"];
+    const subdomain = useProdHosts.includes(window.location.hostname) ? "www" : "staging";
+
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    lib.src = `https://${subdomain}.kaggleusercontent.com/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+</div>
+
+
+
+    <!-- Cheers, web-fdbbd959f-7z942p. -->
+
+  </main>
+</body>
+
+</html>
