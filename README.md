@@ -2,6 +2,7 @@
 Hello all, This is my first SQL Project. This project is on employee dataset which has different attributes. Having an interest in SQL, I have decided to make a simple project. To begin with, I was not clear about the dataset and the background to work on. I had various datasets in my mind after browsing through a lot of examples. Each dataset I viewed at was looking friendly but selecting one has taken a while. After looking at various datasets and projects, I came to know about 'Kaggle'. I explored Kaggle, looked at several sets, and finally ended up choosing the set that looked very familiar to me. I have downloaded the dataset and started exploring different scenarios as to how different statements can be formed.
 
 Dataset 1 - https://www.kaggle.com/datasets/kaggle/sf-salaries
+
 Dataset 2 - https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset
 
 Challenges-
